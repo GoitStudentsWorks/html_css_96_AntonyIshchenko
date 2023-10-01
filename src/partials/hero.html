@@ -1,5 +1,5 @@
 <section class="hero">
-  <div class="container">
+  <div class="container hero-container">
     <div class="hero-title-button">
       <h1 class="hero-title">
         Reviving the traditional
@@ -7,8 +7,8 @@
         stitch.
       </h1>
 
-      <button class="hero-button" type="button" id="#your-order">
-        Order
+      <button class="hero-button" type="button">
+        <a href="#order">Order</a>
         <svg class="form-icon-footer" width="24" height="24" aria-label="arrow">
           <use href="../img/icons.svg#arrow"></use>
         </svg>
@@ -60,30 +60,13 @@
       <p class="hero-star-item">all embroidery is made by hand</p>
     </div>
 
-    <div class="hero-map">
-      <picture>
-        <!-- Desktop screen -->
-        <source
-          media="(min-width: 1280px)"
-          srcset="../img/hero/map.png 1x, ../img/hero/map@2x.png 2x"
-          type="image/jpg"
-        />
-        <!-- Tablet screen -->
-        <source
-          media="(min-width: 768px)"
-          srcset="../img/hero/map.png 1x, ../img/hero/map@2x.png 2x"
-          type="image/jpg"
-        />
-
-        <img
-          class="hero-images-map"
-          src="../img/hero/map.png"
-          alt="map"
-          width="139"
-          height="197"
-          loading="lazy"
-        />
-      </picture>
-    </div>
+    <img
+      class="hero-images-map"
+      src="../img/hero/map.png"
+      alt="map"
+      width="139"
+      height="197"
+      srcset="../img/hero/map.png 1x, ../img/hero/map@2x.png 2x"
+    />
   </div>
 </section>
