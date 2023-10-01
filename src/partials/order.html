@@ -1,44 +1,48 @@
-<section id="order" class="order">
-  <h2 class="order-title">
-    <span class="order-title-color">Your order</span> is our priority:
-    Personalized approach and quality of service
-  </h2>
-  <form class="order-form">
-    <label class="order-form-one" for="user_name"></label>
-    <input
-      class="order-form-name"
-      type="text"
-      name="user-name"
-      id="user_name"
-      pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
-      placeholder="Enter your full name"
-      required
-    />
-    <label for="user_email" class="order-form-two"></label>
-    <input
-      class="order-form-name"
-      type="email"
-      id="user_email"
-      name="user-email"
-      placeholder="Enter your email"
-    />
-    <label for="user-comment" class="order-textarea"></label>
-    <textarea
-      class="order-form-textarea"
-      name="comment"
-      id="user-comment"
-      placeholder="Comments"
-      cols=""
-      rows=""
-    ></textarea>
+<section id="order" class="order-section">
+  <div class="order-part"></div>
+  <div class="order-item">
+    <h2 class="order-title">
+      <span class="order-title-color">Your order</span> is our priority:
+      Personalized approach and quality of service
+    </h2>
+    <form class="order-form">
+      <label class="order-form-one" for="user_Name"></label>
+      <input
+        class="order-form-name"
+        type="text"
+        name="user-name"
+        id="user_Name"
+        pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
+        placeholder="Enter your full name"
+        required
+      />
+      <label for="user_Email" class="order-form-two"></label>
+      <input
+        class="order-form-name"
+        type="email"
+        id="ser_Email"
+        name="user-email"
+        placeholder="Enter your email"
+        required
+      />
+      <label for="user_Comment" class="order-textarea"></label>
+      <textarea
+        class="order-form-textarea"
+        name="comment"
+        id="user_Comment"
+        placeholder="Comments"
+        cols=""
+        rows=""
+      ></textarea>
+    </form>
     <button class="order-botton" type="submit">
-      SEND
+      send
       <svg class="order-send" width="26" height="10">
-        <use href="src/img/icons.svg#arrow"></use>
+        <use href="../img/icons.svg#arrow"></use>
       </svg>
     </button>
-  </form>
-  <picture>
+  </div>
+  <picture class="order-image-section">
     <source
       media="(min-width: 1280px)"
       srcset="
@@ -57,7 +61,7 @@
     />
     <img
       class="order-image"
-      crs="./src/img/order-images/content-desk.jpg"
+      crs="../img/order-images/content-desk.jpg"
       alt="embroidery"
       loading="lazy"
     />

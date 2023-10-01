@@ -1,0 +1,177 @@
+@media screen and (max-width: 767px) {
+  .order-part {
+    width: 375px;
+    height: 550px;
+    background-image: url('../img/order-images/fon-your-order-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and(min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .order-part {
+    background-image: url('../img/order-images/fon-your-order-mobile@2x.jpg')
+      src;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-part {
+    width: 768px;
+    height: 776px;
+    background-image: url('../img/order-images/fon-your-order-tabl.jpg');
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and(min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .order-part {
+    background-image: url('../img/order-images/fon-your-order-tabl@2x.jpg') src;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .order-part {
+    width: 1282px;
+    height: 776px;
+    background-image: url('../img/order-images/fon-your-order.jpg');
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and(min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .order-part {
+    background-image: url('../img/order-images/fon-your-order@2x.jpg') src;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .order-part {
+    width: 1440px;
+    height: 776px;
+    background-image: url('../img/order-images/fon-your-order.jpg');
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and(min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .order-part {
+    background-image: url('../img/order-images/fon-your-order@2x.jpg') src;
+  }
+}
+
+.order-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.375;
+  letter-spacing: -0.03em;
+  padding-top: 80px;
+}
+
+.order-title-color {
+  color: var(--yellow-color);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.375;
+  letter-spacing: -0.03em;
+}
+
+.order-form-name {
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  width: 335px;
+  padding: 14px 16px;
+  background-color: transparent;
+
+  color: rgba(252, 249, 249, 0.5);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.order-form-name:hover,
+.order-form-name:focus {
+  border: 1px solid var(--white-color);
+}
+
+.order-form-textarea {
+  display: flex;
+  align-items: flex-start;
+  width: 335px;
+  height: 196px;
+  border-radius: 8px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  background-color: transparent;
+  padding: 14px 16px;
+  resize: none;
+}
+
+.order-botton {
+  display: flex;
+  padding: 14px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--white-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.order-send {
+  fill: var(--yellow-color);
+}
+
+.order-botton:hover,
+.order-botton:focus {
+  border: 1px solid var(--yellow-color);
+}
+
+.order-image-section {
+  display: none;
+}
