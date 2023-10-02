@@ -15,9 +15,6 @@
 .hero-button {
     display: inline-flex;
     height: 50px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     flex-shrink: 0;
     border-radius: 15px;
     border: 1px solid var(--gray-color);
@@ -28,8 +25,13 @@
     text-transform: uppercase;
     margin-bottom: 40px;
     background-color: var(--black-color);
-    margin-right: auto;
-    margin-left: auto;
+}
+
+.hero-button-anchor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .hero-icon-button {
@@ -38,7 +40,7 @@
 
 .hero-img {
     border-radius: 4px;
-    width: 335px;
+    max-width: 335px;
     height: 545px;
 }
 
@@ -64,29 +66,24 @@
 
     .hero-star {
         display: flex;
-        width: 115px;
-        row-gap: 10px;
+        max-width: 115px;
+        row-gap: 16px;
         flex-direction: column;
         align-items: center;
         position: absolute;
-        top: -20px;
         right: 32px;
+        top:-26px;
     }
 
     .hero-images-star {
-        display: flex;
-        justify-content: center;
         fill: var(--yellow-color);
     }
 
     .hero-star-item {
-        color: var(--gray-color);
+        color: rgba(252, 249, 249, 0.40);
         text-align: center;
         font-size: 16px;
-        font-weight: 400;
         letter-spacing: -0.04em;
-        display: flex;
-        align-items: center;
     }
 
     .hero-title {
@@ -103,7 +100,6 @@
         min-width: 168px;
         font-size: 16px;
         margin-left: 141px;
-        margin-bottom: 40px;
         padding: 14px 39px;
     }
 
