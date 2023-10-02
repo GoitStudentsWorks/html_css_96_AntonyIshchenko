@@ -14,8 +14,7 @@
 
 .hero-button {
     display: inline-flex;
-    height: 49px;
-    padding: 14px 36px;
+    height: 50px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -29,6 +28,8 @@
     text-transform: uppercase;
     margin-bottom: 40px;
     background-color: var(--black-color);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero-icon-button {
@@ -48,6 +49,8 @@
 @media screen and (max-width:767px) {
 
     .hero-button {
+        min-width: 154px;
+        padding: 14px 36px;
         margin-left: 70px;
     }
 
@@ -55,5 +58,67 @@
     .hero-images-map {
         display: none;
     }
+}
 
+@media screen and (min-width:768px) {
+
+    .hero-star {
+        display: flex;
+        width: 115px;
+        row-gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: -20px;
+        right: 32px;
+    }
+
+    .hero-images-star {
+        display: flex;
+        justify-content: center;
+        fill: var(--yellow-color);
+    }
+
+    .hero-star-item {
+        color: var(--gray-color);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: -0.04em;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-title {
+        max-width: 549px;
+        color: var(--white-color);
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 1.19;
+        letter-spacing: -0.03em;
+        margin-bottom: 40px;
+    }
+
+    .hero-button {
+        min-width: 168px;
+        font-size: 16px;
+        margin-left: 141px;
+        margin-bottom: 40px;
+        padding: 14px 39px;
+    }
+
+    .hero-button:hover {
+        border: 1px solid var(--yellow-color);
+    }
+
+    .hero-container {
+        position: relative;
+    }
+
+    .hero-images-map {
+        display: flex;
+        position: absolute;
+        bottom: -99px;
+        right: 32px;
+    }
 }
