@@ -1,6 +1,6 @@
-<section class="order-section">
+<section class="order">
   <div class="order-part"></div>
-  <div class="order-item">
+  <div class="container order-item">
     <h2 class="order-title" id="order">
       <span class="order-title-color">Your order</span> is our priority:
       Personalized approach and quality of service
@@ -40,28 +40,29 @@
       </button>
     </form>
   </div>
-  <picture class="order-image-section">
-    <source
-      media="(min-width: 1280px)"
-      srcset="
-        ./src/img/order-images/content-desk.jpg    1x,
-        ./src/img/order-images/content-desk@2x.jpg 2x
-      "
-      type="image/jpg"
-    />
-    <source
-      media="(min-width: 768px)"
-      srcset="
-        ./src/img/order-images/content-desk.jpg    1x,
-        ./src/img/order-images/content-desk@2x.jpg 2x
-      "
-      type="image/jpg"
-    />
-    <img
-      class="order-image"
-      crs="../img/order-images/content-desk.jpg"
-      alt="embroidery"
-      loading="lazy"
-    />
-  </picture>
+  <div class="order-fon-img">
+    <picture class="order-image-section">
+      <source
+        srcset="
+          ./img/order-images/content-desk.jpg    1x,
+          ./img/order-images/content-desk@2x.jpg 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ./img/order-images/content-desk.jpg    1x,
+          ./img/order-images/content-desk@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        src="./img/order-images/content-desk.jpg"
+        width="638"
+        height="521"
+        alt="embroidery"
+        loading="lazy"
+      />
+    </picture>
+  </div>
 </section>
