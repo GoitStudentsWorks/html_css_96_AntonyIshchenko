@@ -1,0 +1,38 @@
+.collection {
+    background-image: url(../img/collection/backimgmob.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 285px;
+}
+
+.collection-title {
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--white-color);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.38;
+    letter-spacing: -0.03em;
+}
+
+.collection-list-title {
+    overflow: hidden;
+    color: var(--white-color);
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.0;/* 100% */
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.collection-list-text {
+    color: var(--gray-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.0;/* 100% */
+    letter-spacing: 0.05em;
+}
