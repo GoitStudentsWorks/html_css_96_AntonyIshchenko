@@ -34,6 +34,8 @@
   margin-bottom: 20px;
 }
 .about-img {
+  max-width: 335px;
+  max-height: 499px;
   border-radius: 4px;
 }
 /* 768px - 1158px */
