@@ -36,21 +36,15 @@
     opacity: 0.8;
 }
 
-.header-mobile-menu-btn {
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    line-height: 0;
-    margin-left: 12px;
-}
-
-.header-mobile-menu-icon {
-    width: 36px;
-    height: 24px;
-    stroke: var(--yellow-color);
-}
-
 @media (min-width: 320px) and (max-width: 1279px) {
+    .header-nav-list {
+        display: none;
+    }
+
+    .header-address {
+        display: none;
+    }
+
     .header-backdrop {
         position: fixed;
         top: 0;
@@ -70,6 +64,20 @@
         visibility: visible;
     }
 
+    .header-mobile-menu-btn {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        line-height: 0;
+        margin-left: 12px;
+    }
+
+    .header-mobile-menu-icon {
+        width: 36px;
+        height: 24px;
+        stroke: var(--yellow-color);
+    }
+
     .header-mobile-menu {
         display: flex;
         flex-direction: column;
@@ -82,6 +90,11 @@
         padding: 0 20px;
         transform: translateX(100%);
         transition: transform var(--duration) var(--time-function);
+
+        background-image: url(/img/header/header-mob-menu-background.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
     }
 
     .header-backdrop.is-open>.header-mobile-menu {
@@ -146,13 +159,6 @@
         line-height: 1.29;
         text-transform: uppercase;
     }
-
-    .header-mobile-menu {
-        background-image: url(/img/header/header-mob-menu-background.png);
-        background-repeat: no-repeat;
-        background-position: right bottom;
-        background-size: contain;
-    }
 }
 
 @media (min-resolution: 192dpi) and (max-width: 767px),
@@ -160,15 +166,5 @@
 (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .header-mobile-menu {
         background-image: url(/img/header/header-mob-menu-background@2x.png);
-    }
-}
-
-@media (max-width: 1279px) {
-    .header-nav-list {
-        display: none;
-    }
-
-    .header-address {
-        display: none;
     }
 }
