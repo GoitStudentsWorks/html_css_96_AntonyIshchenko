@@ -2,7 +2,64 @@
     background-image: url(../img/collection/backimgmob.png);
     background-repeat: no-repeat;
     background-position: left;
-    background-position-y: 285px;
+    background-position-y: 300px;
+}
+
+@media (min-resolution: 192dpi) and (max-width: 767px), 
+(min-resolution: 2dppx) and (max-width: 767px), 
+(min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .collection {
+        background-image: url(../img/collection/backimgmob@2x.png);
+    }
+}
+
+@media (min-width: 768px) {
+    .collection {
+        background-image: url(../img/collection/backimg-other.png);
+    }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 768px),
+(min-resolution: 2dppx) and (min-width: 768px),
+(min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .collection {
+        background-image: url(../img/collection/backimg-other@2x.png);
+    }
+}
+
+@media (min-width: 1280px) {
+    .collection {
+        background-image: url(../img/collection/backimg-other.png);
+    }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1280px),
+(min-resolution: 2dppx) and (min-width: 1280px),
+(min-device-pixel-ratio: 2) and (min-width: 1280px) {
+    .collection {
+        background-image: url(../img/collection/backimg-other@2x.png);
+    }
+}
+
+@media (min-width: 1440px) {
+    .collection {
+        background-image: url(../img/collection/backimg-other.png);
+    }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1440px),
+(min-resolution: 2dppx) and (min-width: 1440px),
+(min-device-pixel-ratio: 2) and (min-width: 1440px) {
+    .collection {
+        background-image: url(../img/collection/backimg-other@2x.png);
+    }
+}
+
+.collection-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
 .collection-title {
@@ -10,28 +67,25 @@
     text-align: center;
     color: var(--white-color);
     font-size: 32px;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.38;
     letter-spacing: -0.03em;
 }
 
 .collection-list-title {
-    overflow: hidden;
     color: var(--white-color);
-    text-overflow: ellipsis;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.0;/* 100% */
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-bottom: 8px;
+    margin-top: 18px;
 }
 
 .collection-list-text {
-    color: var(--gray-color);
+    color: rgba(252, 249, 249, 0.40);
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.0;/* 100% */
     letter-spacing: 0.05em;
