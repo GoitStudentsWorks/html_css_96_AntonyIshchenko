@@ -1,6 +1,5 @@
-/* .hero-title {
+.hero-title {
     color: var(--white-color);
-    font-family: Manrope;
     font-size: 44px;
     font-weight: 400;
     line-height: 1.23;
@@ -24,22 +23,22 @@
     border-radius: 15px;
     border: 1px solid var(--gray-color);
     color: var(--white-color);
-    font-family: Manrope;
     font-size: 14px;
     font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.56px;
+    letter-spacing: -0.04em;
     text-transform: uppercase;
     margin-bottom: 40px;
     background-color: var(--black-color);
 }
 
-.hero-button {
+.hero-icon-button {
     fill:var(--yellow-color);
 }
 
 .hero-img {
     border-radius: 4px;
+    width: 335px;
+    height: 545px;
 }
 
 .hero-button:focus {
@@ -53,11 +52,8 @@
     }
 
     .hero-star,
-    .hero-map {
+    .hero-images-map {
         display: none;
     }
 
-    .hero-images-star {
-        fill:var(--yellow-color);
-    }
-} */
+}
