@@ -1,3 +1,7 @@
+.testimonials-div {
+padding-top: 24px;
+}
+
 .testimonials-title {
 margin-bottom: 40px;
 color: #FCF9F9;
@@ -11,6 +15,9 @@ letter-spacing: -0.03em;
 .testimonials-list {
 display: flex;
 flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 32px;
 }
 
 .testimonials-list-response {
@@ -21,9 +28,13 @@ border-radius: 4px;
 border: 1px solid rgba(252, 249, 249, 0.10);
 }
 
-.testimonials-people-img {
-position: absolute;
+.testimonials-list-response-mob {
+display: none;
+}
 
+.testimonials-people-img {
+margin: 0 auto;
+transform: translateY(-24px);
 }
 
 .testimonials-people {
@@ -60,6 +71,8 @@ line-height: normal;
 }  
 
 .testimonials-list{
+display: flex;
+flex-direction: row;
 gap: 32px;
 }
 
@@ -90,6 +103,5 @@ width: 343px;
 
 .testimonials-list-response{
 width: 396px;
-}
-   
+}  
 }
