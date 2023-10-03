@@ -17,10 +17,11 @@ gap: 32px;
 
 .testimonials-list-response {
 width: 100%;
-padding: 0px 18px 18px 18px;
+padding: 54px 18px 18px 18px;
 text-align: center;
 border-radius: 4px;
 border: 1px solid rgba(252, 249, 249, 0.10);
+position: relative;
 }
 
 .testimonials-list-response:not(:first-child) {
@@ -28,8 +29,12 @@ display: none;
 }
 
 .testimonials-people-img {
-margin: 0 auto;
-transform: translateY(-24px);
+/* margin: 0 auto;
+transform: translateY(-24px); */
+position: absolute;
+left: 50%;
+top: -24px;
+transform: translateX(-50%);
 }
 
 .testimonials-people {
