@@ -1,36 +1,36 @@
 <section class="order">
-  <div class="order-part"></div>
-  <div class="order-general">
-    <div class="container order-item">
+  <div class="container order-part"></div>
+  <div class="container order-item">
+    <div class="order-form-wrapper">
       <h2 class="order-title" id="order">
         <span class="order-title-color">Your order</span> is our priority:
         Personalized approach and quality of service
       </h2>
       <form class="order-form">
-        <label class="visualli-hidden" for="user_Name">
+        <label for="userName">
           <input
             class="order-form-name"
             type="text"
             name="user-name"
-            id="user_Name"
+            id="userName"
             pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
             placeholder="Enter your full name"
             required
         /></label>
-        <label class="visualli-hidden" for="user_Email" class="order-form-two">
+        <label for="userEmail">
           <input
             class="order-form-name"
             type="email"
-            id="ser_Email"
+            id="userEmail"
             name="user-email"
             placeholder="Enter your email"
             required
         /></label>
-        <label class="visualli-hidden" for="user_Comment">
+        <label for="userComment">
           <textarea
             class="order-form-textarea"
             name="comment"
-            id="user_Comment"
+            id="userComment"
             placeholder="Comments"
           ></textarea>
         </label>
@@ -43,28 +43,26 @@
         </button>
       </form>
     </div>
-    <div class="order-fon-img">
-      <picture class="order-image-section">
-        <source
-          srcset="
-            ./img/order-images/content-desk.jpg    1x,
-            ./img/order-images/content-desk@2x.jpg 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="
-            ./img/order-images/content-tabl.jpg    1x,
-            ./img/order-images/content-tabl@2x.jpg 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <img
-          src="./img/order-images/content-tabl.jpg"
-          alt="embroidery"
-          loading="lazy"
-        />
-      </picture>
-    </div>
+    <picture class="order-image-section">
+      <source
+        srcset="
+          ./img/order-images/content-desk.jpg    1x,
+          ./img/order-images/content-desk@2x.jpg 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ./img/order-images/content-tabl.jpg    1x,
+          ./img/order-images/content-tabl@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        src="./img/order-images/content-tabl.jpg"
+        alt="embroidery"
+        loading="lazy"
+      />
+    </picture>
   </div>
 </section>
