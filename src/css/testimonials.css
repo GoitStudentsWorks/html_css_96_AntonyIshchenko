@@ -63,7 +63,6 @@ line-height: normal;
 .testimonials-list{
 display: flex;
 flex-direction: row;
-gap: 32px;
 }
 
 .testimonials-title {
