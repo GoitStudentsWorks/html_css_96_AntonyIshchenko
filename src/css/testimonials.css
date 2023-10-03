@@ -1,7 +1,6 @@
 .testimonials-title {
 margin-bottom: 64px;
 color: #FCF9F9;
-font-family: Manrope;
 font-size: 32px;
 font-style: normal;
 font-weight: 500;
@@ -54,7 +53,7 @@ line-height: normal;
 @media (min-width: 768px) {
 
 .testimonials-list-response {
-max-width: 336px;
+max-width: calc((100% - 32px) / 2);
 color: rgba(252, 249, 249, 0.40);
 text-align: center;
 font-family: Manrope;
@@ -89,13 +88,10 @@ gap: 26px;
 }
 
 .testimonials-list-response {
-max-width: 343px;
+max-width: calc((100% - 26px) / 3);
 }
 }
 
 @media (min-width: 1440px) {
 
-.testimonials-list-response{
-max-width: 396px;
-}  
 }
