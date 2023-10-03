@@ -7,18 +7,17 @@
         Personalized approach and quality of service
       </h2>
       <form class="order-form">
-        <label class="order-form-one" for="user_Name"></label>
-        <input
-          class="order-form-name"
-          type="text"
-          name="user-name"
-          id="user_Name"
-          pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
-          placeholder="Enter your full name"
-          required
-        />
-        <div class="visually-hidden">
-          <label for="user_Email" class="order-form-two"></label>
+        <label class="visualli-hidden" for="user_Name">
+          <input
+            class="order-form-name"
+            type="text"
+            name="user-name"
+            id="user_Name"
+            pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
+            placeholder="Enter your full name"
+            required
+        /></label>
+        <label class="visualli-hidden" for="user_Email" class="order-form-two">
           <input
             class="order-form-name"
             type="email"
@@ -26,15 +25,16 @@
             name="user-email"
             placeholder="Enter your email"
             required
-          />
-        </div>
-        <label for="user_Comment" class="order-textarea"></label>
-        <textarea
-          class="order-form-textarea"
-          name="comment"
-          id="user_Comment"
-          placeholder="Comments"
-        ></textarea>
+        /></label>
+        <label class="visualli-hidden" for="user_Comment">
+          <textarea
+            class="order-form-textarea"
+            name="comment"
+            id="user_Comment"
+            placeholder="Comments"
+          ></textarea>
+        </label>
+
         <button class="order-botton" type="submit">
           send
           <svg class="order-send" width="26" height="10">
@@ -61,8 +61,6 @@
         />
         <img
           src="./img/order-images/content-tabl.jpg"
-          width="638"
-          height="521"
           alt="embroidery"
           loading="lazy"
         />
