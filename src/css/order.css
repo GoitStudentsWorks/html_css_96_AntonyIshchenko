@@ -39,24 +39,6 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .order-part {
-    width: 1280px;
-    height: 776px;
-    background-image: url('../img/order-images/fon-your-order.jpg');
-    background-repeat: no-repeat;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
-  screen and(min-resolution: 2dppx) and (min-width: 1280px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
-  .order-part {
-    background-image: url('../img/order-images/fon-your-order@2x.jpg') src;
-  }
-}
-
 @media screen and (min-width: 1440px) {
   .order-part {
     width: 1440px;
@@ -261,12 +243,25 @@
   }
 }
 
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and(min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .order-part {
+    background-image: url('../img/order-images/fon-your-order-double@2x.jpg')
+      src;
+  }
+}
+
 @media screen and (min-width: 1280) {
   .order {
     width: 100%;
   }
 
   .order-part {
+    width: 1280px;
+    height: 776px;
+    background-image: url('../img/order-images/fon-your-order-double.jpg');
+    background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
   }
