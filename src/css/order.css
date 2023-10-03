@@ -4,7 +4,7 @@
     height: 550px;
     background-image: url('../img/order-images/fon-your-order-mobile.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-origin: border-box;
     margin-left: auto;
     margin-right: auto;
   }
@@ -25,6 +25,7 @@
     height: 776px;
     background-image: url('../img/order-images/fon-your-order-tabl.jpg');
     background-repeat: no-repeat;
+    background-origin: border-box;
     margin-left: auto;
     margin-right: auto;
   }
@@ -40,7 +41,7 @@
 
 @media screen and (min-width: 1280px) {
   .order-part {
-    width: 1282px;
+    width: 1280px;
     height: 776px;
     background-image: url('../img/order-images/fon-your-order.jpg');
     background-repeat: no-repeat;
@@ -72,6 +73,11 @@
   .order-part {
     background-image: url('../img/order-images/fon-your-order@2x.jpg') src;
   }
+}
+
+.order {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .order-item {
@@ -154,7 +160,6 @@
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
   background-color: transparent;
-  cursor: pointer;
   margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
@@ -253,5 +258,18 @@
     width: 638px;
     height: auto;
     border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 1280) {
+  .order-part {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .order-general {
+    display: block;
+    flex-direction: row-reverse;
+    align-items: center;
   }
 }
