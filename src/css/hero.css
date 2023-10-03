@@ -14,11 +14,7 @@
 
 .hero-button {
     display: inline-flex;
-    height: 49px;
-    padding: 14px 36px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    height: 50px;
     flex-shrink: 0;
     border-radius: 15px;
     border: 1px solid var(--gray-color);
@@ -31,13 +27,20 @@
     background-color: var(--black-color);
 }
 
+.hero-button-anchor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .hero-icon-button {
     fill:var(--yellow-color);
 }
 
-.hero-img {
+.hero-img{
     border-radius: 4px;
-    width: 335px;
+    max-width: 335px;
     height: 545px;
 }
 
@@ -48,6 +51,8 @@
 @media screen and (max-width:767px) {
 
     .hero-button {
+        min-width: 154px;
+        padding: 14px 36px;
         margin-left: 70px;
     }
 
@@ -55,5 +60,65 @@
     .hero-images-map {
         display: none;
     }
+}
 
+@media screen and (min-width:768px) {
+
+    .hero-star {
+        display: flex;
+        max-width: 115px;
+        row-gap: 16px;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 32px;
+        top:-26px;
+    }
+
+    .hero-images-star {
+        fill: var(--yellow-color);
+    }
+
+    .hero-star-item {
+        color: rgba(252, 249, 249, 0.40);
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: -0.04em;
+    }
+
+    .hero-title {
+        max-width: 549px;
+        color: var(--white-color);
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 1.19;
+        letter-spacing: -0.03em;
+        margin-bottom: 40px;
+    }
+
+    .hero-button {
+        min-width: 168px;
+        font-size: 16px;
+        margin-left: 141px;
+        padding: 14px 39px;
+    }
+
+    .hero-button:hover {
+        border: 1px solid var(--yellow-color);
+    }
+
+    .hero-container {
+        position: relative;
+    }
+
+    .hero-images-map {
+        display: flex;
+        position: absolute;
+        bottom: -99px;
+        right: 32px;
+    }
+
+    .hero-img img{
+        border-radius: 4px;
+    }
 }
