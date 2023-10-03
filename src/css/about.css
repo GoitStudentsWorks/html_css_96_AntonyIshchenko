@@ -70,7 +70,9 @@
     column-gap: 50px;
   }
   .about-wrapper {
-    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 436px;
     margin-bottom: 0;
   }
@@ -90,7 +92,6 @@
     background-size: 545px 484px;
   }
   .about-wrapper {
-    padding-top: 78px;
     max-width: 481px;
   }
 }
