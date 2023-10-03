@@ -14,8 +14,6 @@
 }
 .about-wrapper {
   margin-bottom: 50px;
-  width: 100%;
-  max-width: 335px;
 }
 .about-title {
   color: var(--white-color);
@@ -28,36 +26,78 @@
 .about-text {
   color: rgba(252, 249, 249, 0.4);
   font-size: 14px;
-  font-weight: 400;
-  line-height: normal;
   letter-spacing: -0.04em;
   margin-bottom: 20px;
 }
-.about-img img {
-  max-width: 335px;
-  max-height: 499px;
+.about-img {
   border-radius: 4px;
 }
-/* 768px - 1158px */
-/* .about-container {
-  background-image: url(../img/about/about-ornament-tablet.png);
+
+/* 768px - 1280px */
+@media (min-width: 768px) {
+  .about-container {
+    background-image: url(../img/about/about-ornament-tablet.png);
+    background-size: 369px 484px;
+    padding-bottom: 50px;
+  }
+
+  .about-wrapper {
+    margin-bottom: 40px;
+  }
+  .about-title {
+    font-size: 44px;
+    line-height: 1.45;
+  }
+  .about-text {
+    font-size: 16px;
+  }
 }
-@media screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+@media (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px),
+  (min-device-pixel-ratio: 2) and (min-width: 768px) {
   .about-container {
     background-image: url('../img/about/about-ornament-tablet@2x.png');
   }
-} */
-/* 1158px - ... */
-/* .about-container {
-  background-image: url(../img/about/about-ornament-desktop.png);
 }
 
-@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
-  screen and (min-resolution: 2dppx) and (min-width: 1158px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
-   .about-container {
+/* 1280px - 1440px */
+@media (min-width: 1280px) {
+  .about-container {
+    background-image: url(../img/about/about-ornament-desktop.png);
+    background-size: 385px 484px;
+    padding-bottom: 80px;
+    display: flex;
+    column-gap: 50px;
+  }
+  .about-wrapper {
+    padding-top: 50px;
+    max-width: 436px;
+    margin-bottom: 0;
+  }
+}
+@media (min-resolution: 192dpi) and (min-width: 1158px),
+  (min-resolution: 2dppx) and (min-width: 1158px),
+  (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+  .about-container {
     background-image: url('../img/about/about-ornament-desktop@2x.png');
   }
-} */
+}
+
+/* 1440px - and others */
+@media (min-width: 1440px) {
+  .about-container {
+    background-image: url(../img/about/about-ornament-desktop-big.png);
+    background-size: 545px 484px;
+  }
+  .about-wrapper {
+    padding-top: 78px;
+    max-width: 481px;
+  }
+}
+@media (min-resolution: 192dpi) and (min-width: 1440px),
+  (min-resolution: 2dppx) and (min-width: 1440px),
+  (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .about-container {
+    background-image: url('../img/about/about-ornament-desktop-big@2x.png');
+  }
+}

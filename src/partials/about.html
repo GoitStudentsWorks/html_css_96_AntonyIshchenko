@@ -20,7 +20,15 @@
       </p>
     </div>
 
-    <picture class="about-img">
+    <picture>
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ../img/about/about-desktop-big.jpg    1x,
+          ../img/about/about-desktop-big@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
       <!-- Desktop screen -->
       <source
         media="(min-width: 1280px)"
@@ -49,6 +57,7 @@
         type="image/jpg"
       />
       <img
+        class="about-img"
         src="../img/about/about-mobile.jpg"
         alt="vyshyvanka"
         loading="lazy"
