@@ -37,6 +37,11 @@
 }
 
 @media (min-width: 320px) and (max-width: 1279px) {
+
+    .header-container {
+        min-width: 52px;
+    }
+
     .header-nav-list {
         display: none;
     }
@@ -126,7 +131,7 @@
         font-size: 12px;
         font-weight: 400;
         line-height: 1.17;
-        max-width: 158px;
+        max-width: 160px;
     }
 
     .header-mob-menu-nav {
@@ -158,5 +163,138 @@
 (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .header-mobile-menu {
         background-image: url(/img/header/header-mob-menu-background@2x.png);
+    }
+}
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .header-mobile-menu-btn {
+        margin-left: 20px;
+    }
+
+    .header-mobile-menu-icon {
+        width: 44px;
+        height: 30px;
+    }
+
+    .header-mobile-menu {
+        width: 380px;
+        padding: 20px 32px;
+
+        background-image: url(/img/header/header-bg-tablet-menu.png);
+    }
+
+    .header-mob-menu-close-btn {
+        top: 20px;
+        right: 32px;
+    }
+
+    .header-mob-menu-close-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .header-mob-menu-tel {
+        font-size: 14px;
+        line-height: 1.43;
+        padding: 14px 28px;
+        max-width: 195px;
+    }
+
+    .header-mob-menu-nav-list {
+        gap: 25px;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1280px) {
+    .header-mobile-menu-btn {
+        display: none;
+    }
+
+    .header-backdrop {
+        display: none;
+    }
+
+    .header-nav {
+        display: flex;
+        column-gap: 60px;
+        align-items: center;
+    }
+
+    .header-nav-list {
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+    }
+
+    .header-nav-link {
+        color: var(--white-color);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.29;
+        text-transform: uppercase;
+        display: block;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        transition: color var(--duration) var(--time-function);
+    }
+
+    .header-nav-link:hover,
+    .header-nav-link:focus {
+        color: var(--yellow-color);
+    }
+
+    .header-contacts-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-address {
+        margin-right: 20px;
+    }
+
+    .header-tel-link {
+        display: block;
+        padding: 14px 28px;
+        border-radius: 15px;
+        border: 1px solid var(--gray-color);
+        max-width: 195px;
+
+        color: var(--white-color);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.43;
+        text-transform: uppercase;
+
+        transition: border-color var(--duration) var(--time-function);
+    }
+
+    .header-tel-link:hover,
+    .header-tel-link:focus {
+        border-color: var(--yellow-color);
+    }
+
+    .header-social-media-link {
+        transition: border-color var(--duration) var(--time-function), background-color var(--duration) var(--time-function);
+    }
+
+    .header-social-media-link:hover,
+    .header-social-media-link:focus {
+        border-color: var(--yellow-color);
+        background-color: transparent;
+    }
+
+}
+
+@media (min-resolution: 192dpi) and (max-width: 1279px),
+(min-resolution: 2dppx) and (max-width: 1279px),
+(min-device-pixel-ratio: 2) and (max-width: 1279px) {
+    .header-mobile-menu {
+        background-image: url(/img/header/header-bg-tablet-menu@2x.png);
     }
 }
