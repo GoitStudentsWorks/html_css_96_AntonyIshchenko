@@ -112,7 +112,6 @@
     }
 
     .hero-images-map {
-        display: flex;
         position: absolute;
         bottom: -99px;
         right: 32px;
@@ -120,5 +119,46 @@
 
     .hero-img img{
         border-radius: 4px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .hero-container {
+        display: flex;
+    }
+
+    .hero-img {
+        order: -1;
+        max-width: 392px;
+    }
+
+    .hero-title {
+        order: 2;
+        display: inline-block;
+        max-width: 518px;
+    }
+
+    .hero-button {
+        order: 3;
+        display: block;
+        max-width: 168px;
+        margin-right: auto;
+    }
+
+    .hero-title-button {
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+        align-items: center;
+        margin-top: 94px;
+    }
+
+    .hero-images-map {
+        right: 100px;
+    }
+
+    .hero-star {
+        right: 100px;
+        top: 14px;
     }
 }
