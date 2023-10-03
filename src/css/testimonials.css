@@ -1,7 +1,6 @@
 .testimonials-title {
-margin-bottom: 40px;
+margin-bottom: 64px;
 color: #FCF9F9;
-font-family: Manrope;
 font-size: 32px;
 font-style: normal;
 font-weight: 500;
@@ -11,26 +10,33 @@ letter-spacing: -0.03em;
 .testimonials-list {
 display: flex;
 flex-direction: column;
+gap: 32px;
 }
 
 .testimonials-list-response {
 width: 100%;
-padding: 0px 18px 18px 18px;
+padding: 54px 18px 18px 18px;
 text-align: center;
 border-radius: 4px;
 border: 1px solid rgba(252, 249, 249, 0.10);
+position: relative;
+}
+
+.testimonials-list-response:not(:first-child) {
+display: none;
 }
 
 .testimonials-people-img {
 position: absolute;
-
+left: 50%;
+top: -24px;
+transform: translateX(-50%);
 }
 
 .testimonials-people {
 margin-bottom: 8px;
 color: #FCF9F9;
 text-align: center;
-font-family: Manrope;
 font-size: 20px;
 font-style: normal;
 font-weight: 600;
@@ -39,7 +45,6 @@ line-height: 1.5;
 .testimonials-response {
 color: rgba(252, 249, 249, 0.40);
 text-align: center;
-font-family: Manrope;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -49,29 +54,38 @@ line-height: normal;
 @media (min-width: 768px) {
 
 .testimonials-list-response {
-width: 336px;
+max-width: calc((100% - 32px) / 2);
 color: rgba(252, 249, 249, 0.40);
 text-align: center;
-font-family: Manrope;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 }  
 
+.testimonials-list-response:nth-child(2) {
+display: block;
+}
+
 .testimonials-list{
-gap: 32px;
+display: flex;
+flex-direction: row;
 }
 
 .testimonials-title {
-margin-bottom: 40px;
+margin-bottom: 64px;
 color: #FCF9F9;
-font-family: Manrope;
 font-size: 44px;
-font-style: normal;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: -0.03em;
+}
+
+.testimonials-response {
+color: rgba(252, 249, 249, 0.40);
+font-size: 16px;
+font-weight: 400;
+line-height: normal;
 }
 }
 
@@ -82,14 +96,15 @@ gap: 26px;
 }
 
 .testimonials-list-response {
-width: 343px;
+max-width: calc((100% - 52px) / 3);
 }
+
+.testimonials-list-response:nth-child(3) {
+display: block;
+}
+
 }
 
 @media (min-width: 1440px) {
 
-.testimonials-list-response{
-width: 396px;
-}
-   
 }
