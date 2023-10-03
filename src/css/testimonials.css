@@ -63,6 +63,10 @@ font-weight: 400;
 line-height: normal;
 }  
 
+.testimonials-list-response:nth-child(2) {
+display: block;
+}
+
 .testimonials-list{
 display: flex;
 flex-direction: row;
@@ -88,6 +92,11 @@ gap: 26px;
 .testimonials-list-response {
 max-width: calc((100% - 52px) / 3);
 }
+
+.testimonials-list-response:nth-child(3) {
+display: block;
+}
+
 }
 
 @media (min-width: 1440px) {
