@@ -71,7 +71,7 @@ screen and (min-resolution: 192dppx) and (max-width: 767px),
 screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .footer-container {
         background-image:
-        url(../img/footer/footer-ornament-mob@x2.png);
+        url(../img/footer/footer-ornament-mob@2x.png);
         background-size: 375px;
     }
     }
@@ -100,7 +100,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     .footer-container {
         background-image:
-        url(../img/footer/footer-ornament-tab@x2.png);
+        url(../img/footer/footer-ornament-tab@2x.png);
+        background-size: 174px 375px ;
     }
 }
 
@@ -110,9 +111,61 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         letter-spacing: -0.03em;
         width: 521px;
     }
+
+    .footer-nav-link {
+        transition: color 300ms ease-in-out;
+    }
+    
+    .footer-nav-link:hover {
+        color: var(--yellow-color);
+    }
 }
 
 
-/*========desktop==============*/
+/*========desktop 1280==============*/
 
+@media screen and (min-width: 1280px) {
+    .footer-nav-list {
+        margin-bottom: 116px;
+    }
+    
+    .footer-title {
+        font-size: 64px;
+        line-height: 1.16;
+        letter-spacing: -0.03em;
+        width: 754px;
+    }
+    .footer-container {
+        background-image: url(../img/footer/footer-ornament-desktop.png);
+        background-size: 364px 336px;
+    }
+    
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 192dppx) and (min-width: 1280px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+    .footer-container {
+        background-image:
+        url(../img/footer/footer-ornament-desktop@2x.png);
+        
 
+    }
+}
+}
+
+/*========desktop 1440==============*/
+
+@media screen and (min-width: 1440px) {
+    .footer-container {
+        background-image: url(../img/footer/footer-ornament.png);
+        background-size: 526px 364px;
+    }
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+screen and (min-resolution: 192dppx) and (min-width: 1440px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+            .footer-container {
+                background-image:
+                    url(../img/footer/footer-ornament@2x.png);
+        }
+    }
+}
