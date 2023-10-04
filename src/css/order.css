@@ -16,14 +16,11 @@
   }
 }
 
-.order-part {
-  margin-bottom: 80px;
-}
-
 .order-item {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding-top: 80px;
 }
 
 .order-title {
@@ -32,7 +29,7 @@
   font-weight: 500;
   line-height: 1.375;
   letter-spacing: -0.03em;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .order-title-color {
@@ -47,13 +44,12 @@
 .order-form-name {
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
-  max-width: 100%;
+  width: 335px;
   padding: 14px 16px;
   background-color: transparent;
 
   color: var(--white-color);
-  font-size: 16px;
-  /* font-style: normal; */
+  font-size: 14px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.02em;
@@ -136,6 +132,7 @@
     background-position: left bottom;
     background-size: 323px 484px;
     padding-bottom: 79px;
+    padding-top: 100px;
   }
   .order-part {
     width: 768px;
@@ -209,6 +206,7 @@
     padding-left: 64px;
     gap: 50px;
     padding-bottom: 0;
+    padding-top: 150px;
   }
 
   .order-image-section {
@@ -226,9 +224,6 @@
     background-image: url('/img/order-images/elements-min.png');
     background-repeat: no-repeat;
     background-size: 288px 545px;
-  }
-  .order-title {
-    padding-bottom: 40px;
   }
 }
 
