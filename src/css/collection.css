@@ -34,10 +34,6 @@
     margin-bottom: 8px;
 }
 
-.collection-list-title-span-dot {
-    visibility: hidden;
-}
-
 .collection-list-text {
     color: rgba(252, 249, 249, 0.40);
     font-size: 14px;
@@ -45,12 +41,18 @@
     letter-spacing: 0.05em;
 }
 
-@media (min-resolution: 192dpi) and (max-width: 767px),
-(min-resolution: 2dppx) and (max-width: 767px),
-(min-device-pixel-ratio: 2) and (max-width: 767px) {
+@media (max-width: 374px) {
+    .collection {
+        background-image: none;
+    }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 375px), 
+(min-resolution: 2dppx) and (min-width: 375px),
+(min-device-pixel-ratio: 2) and (min-width: 375px) {
     .collection {
         background-image: url(../img/collection/backimgmob@2x.png);
-        background-size: 72px 177px;
+        background-size: 72px 177px ;
         background-position: 0 300px;
     }
 }
@@ -70,14 +72,9 @@
     .collection-list-title {
         white-space: nowrap;
         font-size: 18px;
-    }
-
-    .collection-list-title-span {
-        display: none
-    }
-
-    .collection-list-title-span-dot {
-        visibility: visible;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 344px;
     }
 
     .collection-list-text {
@@ -128,12 +125,8 @@
         background-position: 0 220px;
     }
 
-    .collection-list-title-span {
-        display: inline;
-    }
-
-    .collection-list-title-span-dot {
-        visibility: hidden;
+    .collection-list-title {
+        overflow: visible;
     }
 }
 
