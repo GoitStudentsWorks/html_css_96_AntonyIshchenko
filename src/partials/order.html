@@ -1,0 +1,70 @@
+<section class="order">
+  <div class="container order-part"></div>
+  <div class="container order-item">
+    <div class="order-form-wrapper">
+      <h2 class="order-title" id="order">
+        <span class="order-title-color">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form class="order-form">
+        <label for="userName">
+          <input
+            class="order-form-name"
+            type="text"
+            name="user-name"
+            id="userName"
+            pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
+            placeholder="Enter your full name"
+            required
+        /></label>
+        <label for="userEmail">
+          <input
+            class="order-form-name"
+            type="email"
+            id="userEmail"
+            name="user-email"
+            placeholder="Enter your email"
+            required
+        /></label>
+        <label for="userComment">
+          <textarea
+            class="order-form-textarea"
+            name="comment"
+            id="userComment"
+            placeholder="Comments"
+          ></textarea>
+        </label>
+
+        <button class="order-botton" type="submit">
+          send
+          <div class="arrow-icon-div">
+            <svg class="order-send" width="26" height="10">
+              <use href="/img/icons.svg#arrow"></use>
+            </svg>
+          </div>
+        </button>
+      </form>
+    </div>
+    <picture class="order-image-section">
+      <source
+        srcset="
+          /img/order-images/content-desk.jpg    1x,
+          /img/order-images/content-desk@2x.jpg 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          /img/order-images/content-tabl.jpg    1x,
+          /img/order-images/content-tabl@2x.jpg 2x
+        "
+        media="(max-width: 1279px)"
+      />
+      <img
+        src="/img/order-images/content-tabl.jpg"
+        alt="embroidery"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</section>
