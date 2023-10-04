@@ -1,19 +1,18 @@
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .order-part {
     width: 375px;
     height: 550px;
-    background-image: url('../img/order-images/fon-your-order-mobile.jpg');
+    background-image: url('/img/order-images/fon-your-order-mobile.jpg');
     background-repeat: no-repeat;
     background-origin: border-box;
   }
 }
 
-@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+@media (min-resolution: 192dpi) and (max-width: 767px),
   screen and(min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .order-part {
-    background-image: url('../img/order-images/fon-your-order-mobile@2x.jpg')
-      src;
+    background-image: url('/img/order-images/fon-your-order-mobile@2x.jpg') src;
   }
 }
 
@@ -141,7 +140,7 @@
   .order-part {
     width: 768px;
     height: 776px;
-    background-image: url('../img/order-images/fon-your-order-tabl.jpg');
+    background-image: url('/img/order-images/fon-your-order-tabl.jpg');
     background-repeat: no-repeat;
     background-origin: border-box;
   }
@@ -195,17 +194,16 @@
     border-radius: 4px;
   }
 
-  @media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  @media (min-resolution: 192dpi) and (min-width: 768px),
     screen and(min-resolution: 2dppx) and (min-width: 768px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     .order-part {
-      background-image: url('../img/order-images/fon-your-order-tabl@2x.jpg')
-        src;
+      background-image: url('/img/order-images/fon-your-order-tabl@2x.jpg') src;
     }
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .order-item {
     flex-direction: row-reverse;
     padding-left: 64px;
@@ -220,15 +218,14 @@
   .order-part {
     width: 1280px;
     height: 776px;
-    background-image: url('../img/order-images/fon-your-order-double.jpg');
+    background-image: url('/img/order-images/fon-your-order-double.jpg');
     background-repeat: no-repeat;
   }
 
   .order-item {
     background-image: url('/img/order-images/elements-min.png');
     background-repeat: no-repeat;
-    background-size: 276px 545px;
-    padding-bottom: 115px;
+    background-size: 288px 545px;
   }
   .order-title {
     padding-bottom: 40px;
@@ -247,7 +244,7 @@
   .order-part {
     width: 1440px;
     height: 776px;
-    background-image: url('../img/order-images/fon-your-order.jpg');
+    background-image: url('/img/order-images/fon-your-order.jpg');
     background-repeat: no-repeat;
     margin-bottom: 0;
   }
@@ -268,7 +265,7 @@
     screen and (min-resolution: 2dppx) and (min-width: 1440px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
     .order-part {
-      background-image: url('../img/order-images/fon-your-order@2x.jpg');
+      background-image: url('/img/order-images/fon-your-order@2x.jpg');
     }
   }
 }
