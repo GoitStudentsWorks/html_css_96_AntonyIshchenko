@@ -12,12 +12,16 @@
     color:var(--yellow-color);
 }
 
-.hero-button {
+.hero-anchor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    border: 1px solid var(--gray-color);
     display: inline-flex;
     height: 50px;
     flex-shrink: 0;
-    border-radius: 15px;
-    border: 1px solid var(--gray-color);
     color: var(--white-color);
     font-size: 14px;
     font-weight: 600;
@@ -27,14 +31,7 @@
     background-color: var(--black-color);
 }
 
-.hero-button-anchor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.hero-icon-button {
+.hero-icon {
     fill:var(--yellow-color);
 }
 
@@ -44,13 +41,13 @@
     height: 545px;
 }
 
-.hero-button:focus {
+.hero-anchor:focus {
     border: 1px solid var(--yellow-color);
 }
 
-@media screen and (max-width:767px) {
+@media (max-width:767px) {
 
-    .hero-button {
+    .hero-anchor {
         min-width: 154px;
         padding: 14px 36px;
         margin-left: 70px;
@@ -62,7 +59,7 @@
     }
 }
 
-@media screen and (min-width:768px) {
+@media (min-width:768px) {
 
     .hero-star {
         display: flex;
@@ -92,18 +89,18 @@
         font-size: 54px;
         font-weight: 400;
         line-height: 1.19;
-        letter-spacing: -0.03em;
+        letter-spacing: -1.92px;
         margin-bottom: 40px;
     }
 
-    .hero-button {
+    .hero-anchor {
         min-width: 168px;
         font-size: 16px;
         margin-left: 141px;
         padding: 14px 39px;
     }
 
-    .hero-button:hover {
+    .hero-anchor:hover {
         border: 1px solid var(--yellow-color);
     }
 
@@ -122,7 +119,7 @@
     }
 }
 
-@media screen and (min-width:1280px) {
+@media (min-width:1280px) {
     .hero-container {
         display: flex;
     }
@@ -133,23 +130,17 @@
     }
 
     .hero-title {
-        order: 2;
-        display: inline-block;
         max-width: 518px;
     }
 
-    .hero-button {
+    .hero-anchor {
         order: 3;
-        display: block;
-        max-width: 168px;
+        width: 168px;
         margin-right: auto;
     }
 
-    .hero-title-button {
-        display: flex;
-        flex-direction: column;
+    .hero-title-icon {
         padding-left: 40px;
-        align-items: center;
         margin-top: 94px;
     }
 
@@ -163,20 +154,18 @@
     }
 }
 
-@media screen and (min-width:1440px) {
-
+@media (min-width:1440px) {
     .hero-title {
         max-width: 630px;
         font-size: 64px;
         line-height: 1.16;
     }
 
-    .hero-button {
-        max-width: 168px;
+    .hero-anchor {
         margin-left: 141px;
     }
 
-    .hero-title-button{
+    .hero-title-icon{
         margin-top: 66px;
     }
   
