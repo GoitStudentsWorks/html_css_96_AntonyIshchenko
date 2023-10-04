@@ -1,10 +1,17 @@
-@media (max-width: 767px) {
+.order-part {
+  margin-bottom: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+
   .order-part {
-    width: 375px;
+    /* width: 100%; */
     height: 550px;
     background-image: url('/img/order-images/fon-your-order-mobile.jpg');
-    background-repeat: no-repeat;
-    background-origin: border-box;
   }
 }
 
@@ -12,7 +19,7 @@
   screen and(min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .order-part {
-    background-image: url('/img/order-images/fon-your-order-mobile@2x.jpg') src;
+    background-image: url('/img/order-images/fon-your-order-mobile@2x.jpg');
   }
 }
 
@@ -135,11 +142,12 @@
     padding-top: 100px;
   }
   .order-part {
-    width: 768px;
+    /* width: 768px; */
+    margin-bottom: 100px;
     height: 776px;
     background-image: url('/img/order-images/fon-your-order-tabl.jpg');
-    background-repeat: no-repeat;
-    background-origin: border-box;
+    /* background-repeat: no-repeat;
+    background-origin: border-box; */
   }
   .order-title {
     width: 542px;
@@ -195,7 +203,7 @@
     screen and(min-resolution: 2dppx) and (min-width: 768px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     .order-part {
-      background-image: url('/img/order-images/fon-your-order-tabl@2x.jpg') src;
+    background-image: url('/img/order-images/fon-your-order-tabl@2x.jpg');
     }
   }
 }
@@ -214,10 +222,19 @@
   }
 
   .order-part {
-    width: 1280px;
-    height: 776px;
+    /* width: 1280px; */
+    /* height: 776px; */
+    margin-bottom: 150px;
     background-image: url('/img/order-images/fon-your-order-double.jpg');
     background-repeat: no-repeat;
+  }
+
+  @media (min-resolution: 192dpi),
+    (min-resolution: 2dppx),
+    (min-device-pixel-ratio: 2) {
+    .order-part {
+      background-image: url('/img/order-images/fon-your-order-double@2x.jpg');
+    }
   }
 
   .order-item {
@@ -237,11 +254,11 @@
 
 @media (min-width: 1440px) {
   .order-part {
-    width: 1440px;
-    height: 776px;
+    /* width: 1440px; */
+    /* height: 776px; */
     background-image: url('/img/order-images/fon-your-order.jpg');
-    background-repeat: no-repeat;
-    margin-bottom: 0;
+    /* background-repeat: no-repeat; */
+    /* margin-bottom: 0; */
   }
   .order-item {
     background-image: url('/img/order-images/elements-desktop.png');

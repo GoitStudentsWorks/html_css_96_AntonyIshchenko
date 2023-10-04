@@ -27,6 +27,8 @@
   --black-color: #1c2225;
   --yellow-color: #ecd979;
   --gray-color: rgba(252, 249, 249, 0.1);
+  --light-gray-color: rgba(252, 249, 249, 0.4);
+  --form-placeholder-color: rgba(252, 249, 249, 0.5);
 
   /* ANIMATION */
   --duration: 300ms;
