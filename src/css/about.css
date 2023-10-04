@@ -77,9 +77,9 @@
     margin-bottom: 0;
   }
 }
-@media (min-resolution: 192dpi) and (min-width: 1158px),
-  (min-resolution: 2dppx) and (min-width: 1158px),
-  (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+@media (min-resolution: 192dpi) and (min-width: 1280px),
+  (min-resolution: 2dppx) and (min-width: 1280px),
+  (min-device-pixel-ratio: 2) and (min-width: 1280px) {
   .about-container {
     background-image: url('/img/about/about-ornament-desktop@2x.png');
   }
