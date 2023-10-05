@@ -1,7 +1,7 @@
-.collection {
+.collection-container {
   background-image: url(../img/collection/backimgmob.png);
   background-repeat: no-repeat;
-  background-position: 0 300px;
+  background-position: 0 10%;
 }
 
 .collection-title {
@@ -32,49 +32,61 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 8px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .collection-list-text {
-  color: rgba(252, 249, 249, 0.4);
+  color: var(--light-gray-color);
   font-size: 14px;
   line-height: 1;
   letter-spacing: 0.05em;
 }
 
-@media (max-width: 374px) {
-  .collection {
-    background-image: none;
+@media (min-width: 375px) {
+  .collection-container {
+    background-position: 0 298px;
+  }
+
+  @media (min-resolution: 192dpi),
+    (min-resolution: 2dppx),
+    (min-device-pixel-ratio: 2) {
+    .collection-container {
+      background-image: url(../img/collection/backimgmob@2x.png);
+      background-size: 72px 177px;
+    }
   }
 }
 
-@media (min-resolution: 192dpi) and (min-width: 375px),
-  (min-resolution: 2dppx) and (min-width: 375px),
-  (min-device-pixel-ratio: 2) and (min-width: 375px) {
-  .collection {
-    background-image: url(../img/collection/backimgmob@2x.png);
-    background-size: 72px 177px;
-    background-position: 0 300px;
+@media (max-width: 767px) {
+  .collection-section {
+    padding-top: 18px;
   }
 }
-
 @media (min-width: 768px) {
-  .collection {
+  .collection-container {
     background-image: url(../img/collection/backimgtab.png);
     background-position: 0 220px;
+  }
+
+  @media (min-resolution: 192dpi),
+    (min-resolution: 2dppx),
+    (min-device-pixel-ratio: 2) {
+    .collection-container {
+      background-image: url(../img/collection/backimgtab@2x.png);
+      background-size: 114px 300px;
+    }
   }
 
   .collection-title {
     font-size: 44px;
     line-height: 1.45;
-    /* letter-spacing: 0.03em; */
   }
 
   .collection-list-title {
-    white-space: nowrap;
     font-size: 18px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 344px;
   }
 
   .collection-list-text {
@@ -86,20 +98,22 @@
   }
 }
 
-@media (min-resolution: 192dpi) and (min-width: 768px),
-  (min-resolution: 2dppx) and (min-width: 768px),
-  (min-device-pixel-ratio: 2) and (min-width: 768px) {
-  .collection {
-    background-image: url(../img/collection/backimgtab@2x.png);
-    background-position: 0 220px;
-    background-size: 114px 300px;
-  }
-}
-
 @media (min-width: 1280px) {
-  .collection {
+  .collection-section {
+    padding-top: 70px;
+  }
+
+  .collection-container {
     background-image: url(../img/collection/backimgdesk.png);
-    background-position: 0 220px;
+  }
+
+  @media (min-resolution: 192dpi),
+    (min-resolution: 2dppx),
+    (min-device-pixel-ratio: 2) {
+    .collection-container {
+      background-image: url(../img/collection/backimgdesk@2x.png);
+      background-size: 169px 300px;
+    }
   }
 
   .collection-list {
@@ -111,31 +125,16 @@
   }
 }
 
-@media (min-resolution: 192dpi) and (min-width: 1280px),
-  (min-resolution: 2dppx) and (min-width: 1280px),
-  (min-device-pixel-ratio: 2) and (min-width: 1280px) {
-  .collection {
-    background-image: url(../img/collection/backimgdesk@2x.png);
-    background-position: 0 220px;
-    background-size: 169px 300px;
-  }
-}
-
 @media (min-width: 1440px) {
-  .collection {
+  .collection-container {
     background-image: url(../img/collection/backimgdeskbig.png);
-    background-position: 0 220px;
   }
 
-  .collection-list-title {
-    overflow: visible;
-  }
-}
-
-@media (min-resolution: 192dpi) and (min-width: 1440px),
-  (min-resolution: 2dppx) and (min-width: 1440px),
-  (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-  .collection {
-    background-image: url(../img/collection/backimgdeskbig@2x.png);
+  @media (min-resolution: 192dpi),
+    (min-resolution: 2dppx),
+    (min-device-pixel-ratio: 2) {
+    .collection-container {
+      background-image: url(../img/collection/backimgdeskbig@2x.png);
+    }
   }
 }

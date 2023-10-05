@@ -22,6 +22,10 @@ html {
   padding-right: 20px;
 }
 
+.arrow-icon {
+  fill: var(--yellow-color);
+}
+
 .arrow-icon-div {
   transform: rotate(-30deg);
 }

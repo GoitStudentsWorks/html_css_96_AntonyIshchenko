@@ -8,7 +8,6 @@
 
 @media screen and (max-width: 767px) {
   .order-part {
-    /* width: 100%; */
     height: 550px;
     background-image: url('/img/order/fon-your-order-mobile.jpg');
   }
@@ -49,16 +48,16 @@
 .order-form-name {
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
-  max-width: 100%;
+  width: 100%;
   padding: 14px 16px;
   background-color: transparent;
 
   color: var(--white-color);
-  font-size: 16px;
-  /* font-style: normal; */
-  font-weight: 400;
+  font-size: 14px;
   line-height: normal;
   letter-spacing: -0.02em;
+
+  transition: border var(--duration) var(--time-function);
 }
 
 .order-form-name::placeholder {
@@ -81,16 +80,21 @@
   align-items: flex-start;
   color: rgba(252, 249, 249, 0.5);
   font-size: 14px;
-  font-weight: 400;
   line-height: normal;
   letter-spacing: -0.02em;
-  width: 335px;
+  width: 100%;
   height: 196px;
   border-radius: 8px;
   border: 1px solid rgba(252, 249, 249, 0.1);
   background-color: transparent;
   padding: 14px 16px;
   resize: none;
+
+  transition: border var(--duration) var(--time-function);
+}
+
+.order-form-textarea:focus {
+  border: 1px solid var(--white-color);
 }
 
 .order-botton {
@@ -176,10 +180,11 @@
     width: 508px;
     height: 196px;
     font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.02em;
+    /* font-weight: 400;
+    line-height: normal; */
+    /* letter-spacing: -0.02em; */
   }
+
   .order-botton {
     margin-left: 0;
     padding: 14px 39px;
