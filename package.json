@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-b34vvmtp/",
+    "build": "vite build --base=/html_css_96_AntonyIshchenko/",
     "preview": "vite preview"
   },
   "devDependencies": {
